@@ -1,3 +1,7 @@
+*{
+  box-sizing:border-box;
+}
+
 .App {
   text-align: center;
 }
@@ -5,8 +9,51 @@
 /* header */
 
 .logo {
-  color:blue;
+  color:rgb(203, 203, 235);
   font-size:40px;
   padding:20px;
   display:inline-block;
+  
+}
+nav{
+  display: inline-block;
+  
+}
+nav a {
+  color:white;
+  text-decoration: none;
+  font-size:2em;
+  padding:0 10px;
+}
+nav a:hover {
+  color:rgb(211, 204, 204);
+}
+.content {
+  width:100%;
+  height:600px;
+ 
+  
+}
+.header {
+ 
+  background:rgb(76, 41, 85);
+}
+.home {
+  
+  background: rgb(142, 159, 206);
+}
+/* search */
+
+.search-product-wrap {
+  display: inline-block;
+}
+.search-product-wrap img {
+  padding:10px 10px 30px 10px;
+}
+.admin {
+  background: rgb(221, 192, 233);
+}
+.footer {
+  height:200px;
+  background: rgb(44, 61, 109);
 }
