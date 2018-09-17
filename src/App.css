@@ -1,0 +1,12 @@
+.App {
+  text-align: center;
+}
+
+/* header */
+
+.logo {
+  color:blue;
+  font-size:40px;
+  padding:20px;
+  display:inline-block;
+}
