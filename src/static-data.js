@@ -4,17 +4,17 @@ let items=[
         objectID:1,
         product: 
          {
-            name:'iphone',
+            name:'Xiaomi Mi 8',
             description: '16gb hipster 8gb supa cam',
          },
         price: 899,
-        photo:'iphone6.jpg'
+        photo:'xiaomi.jpg'
     },
     {
         objectID:2,
         product: 
          {
-            name:'Samsung',
+            name:'Samsung Galaxy',
             description: '32gb 2018 8gb supa camz',
          },
         price: 699,
@@ -24,7 +24,7 @@ let items=[
         objectID:3,
          product: 
          {
-            name:'iphone 6s',
+            name:'Iphone 6s',
             description: '4hdd awesome nextgen IOS9',
          },
         price: 1200,
@@ -34,11 +34,11 @@ let items=[
         objectD:4,
         product: 
          {
-            name:'HTC',
-            description: 'awesome hripste 8gb 16gb hipster cam',
+            name:'Sony Xperia XA1',
+            description: 'awesome hripste ter cam',
          },
         price: 450,
-        photo:'iphone6.jpg'
+        photo:'sony.jpg'
     },
     {
         objectID:5,
@@ -54,8 +54,48 @@ let items=[
         objectID:6,
         product: 
          {
+            name:'Samsung Galaxy S8',
+            description: 'waterproof  3000ps',
+         },
+        price: 60,
+        photo:'samsunga6.jpg'
+    },
+    {
+        objectID:7,
+        product: 
+         {
             name:'NOKIA',
-            description: 'waterproof cow milking 3000ps',
+            description: 'waterproof  3000ps',
+         },
+        price: 60,
+        photo:'samsunga6.jpg'
+    },
+    {
+        objectID:8,
+        product: 
+         {
+            name:'NOKIA',
+            description: 'waterproof  3000ps',
+         },
+        price: 60,
+        photo:'samsunga6.jpg'
+    },
+    {
+        objectID:9,
+        product: 
+         {
+            name:'NOKIA',
+            description: 'waterproof  3000ps',
+         },
+        price: 60,
+        photo:'samsunga6.jpg'
+    },
+    {
+        objectID:10,
+        product: 
+         {
+            name:'NOKIA',
+            description: 'waterproof  3000ps',
          },
         price: 60,
         photo:'samsunga6.jpg'

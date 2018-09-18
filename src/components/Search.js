@@ -29,7 +29,7 @@ class Search extends Component {
     }
     onSearchSubmit(event){
         event.preventDefault();
-        this.setState({searchTerm: event.target.value})
+        
         
     }
 
@@ -42,20 +42,23 @@ class Search extends Component {
         
         return (
             <React.Fragment>
-            <form action="" >
-            <input type="text" value={this.state.searchTerm } onChange={this.onSearchChange}/>
+            <form action="" className='product-form text-center'>
+            <input type="text" placeholder='Ieškoti...' value={this.state.searchTerm } onChange={this.onSearchChange}/>
             </form>
-            
-            <div>
-                {filteredRes.map(
-                    item=>
-                        <div key={item.objectID} className='search-product-wrap'>
-                            <img src={'/images/'+item.photo} alt="ass"/>
-                            <h1>{item.product.name}</h1>
-                            <p>{item.product.description}</p>
-                            <h3>{item.price}</h3>
-                         </div>
-            )}
+            <div className='container'>
+                <div className='row-s '>
+                    {filteredRes.map(
+                        item=>
+                            <div key={item.objectID} className=' col-s col-4-s search-product-wrap text-center'>
+                                <img src={'/images/'+item.photo} alt="ass"/>
+                                    <div className="description">
+                                        <h1>{item.product.name}</h1>
+                                        <p>{item.product.description}</p>
+                                    </div>
+                                <h3 className='item-price'>{item.price}</h3>
+                            </div>
+                    )}
+                </div>
             </div>
             </React.Fragment>
         );

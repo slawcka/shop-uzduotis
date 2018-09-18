@@ -4,7 +4,7 @@ import {items} from '../static-data';
 
 const Home = () => {
     return (
-        <div className='content home'>
+        <div className='content home margin-l'>
             <Search datalist={items}/>
         </div>
     );
