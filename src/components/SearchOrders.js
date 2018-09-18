@@ -12,7 +12,7 @@ function searchMatch(searchTerm){
       // const isSearched=searchTerm=>item=>item.title.toLowerCase().includes(searchTerm.toLowerCase());
     }
   }
-class Search extends Component {
+class SearchOrders extends Component {
     constructor(props){
         super(props);
         this.state={
@@ -34,11 +34,11 @@ class Search extends Component {
     }
 
     render() {
-        let filteredRes= this.props.datalist.filter(ite=>{
+        let filteredRes= this.props.orderList.filter(ite=>{
             return ite.product.name.toLowerCase().includes(this.state.searchTerm) ||
             ite.product.description.toLowerCase().includes(this.state.searchTerm);
         })
-        let filteredResults= this.props.datalist.filter(searchMatch(this.state.searchTerm));
+        //let filteredResults= this.props.datalist.filter(searchMatch(this.state.searchTerm));
         
         return (
             <React.Fragment>
@@ -46,14 +46,15 @@ class Search extends Component {
             <input type="text" value={this.state.searchTerm } onChange={this.onSearchChange}/>
             </form>
             
-            <div>
+            <div className='search-order-wrap'>
                 {filteredRes.map(
                     item=>
-                        <div key={item.objectID} className='search-product-wrap'>
-                            <img src={'/images/'+item.photo} alt="ass"/>
-                            <h1>{item.product.name}</h1>
-                            <p>{item.product.description}</p>
-                            <h3>{item.price}</h3>
+                        <div key={item.objectID} className='search-order-item'>
+                            
+                                <p>{item.product.name}</p>
+                                <p>{item.product.description}</p>
+                                <p>{item.price}</p>
+                            
                          </div>
             )}
             </div>
@@ -62,4 +63,4 @@ class Search extends Component {
     }
 }
 
-export default Search;
+export default SearchOrders;

@@ -5,7 +5,7 @@ import Admin from './components/Admin';
 import Home from './components/Home';
 import Footer from './components/Footer';
 import ErrorPage from './components/ErrorPage';
-import Search from './components/Search';
+
 import {items} from './static-data';
 
 import './App.css';
@@ -16,7 +16,7 @@ class App extends Component {
       <Router>
         <React.Fragment>
           <Header/>
-              <Search datalist={items}/>
+              
             <div className='wrapper'>
               <Switch>
               <Route exact path='/' component={Home}/>

@@ -1,13 +1,13 @@
-import React, { Component } from 'react';
+import React from 'react';
+import SearchOrders from './SearchOrders';
+import {orders} from '../static-data-orders';
 
-class Admin extends Component {
-    render() {
-        return (
-            <div className='content admin'>
-                
-            </div>
-        );
-    }
-}
+const Home = () => {
+    return (
+        <div className='content home'>
+            <SearchOrders orderList={orders}/>
+        </div>
+    );
+};
 
-export default Admin;
+export default Home;

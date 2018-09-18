@@ -42,7 +42,7 @@ nav a:hover {
   
   background: rgb(142, 159, 206);
 }
-/* search */
+/* product search */
 
 .search-product-wrap {
   display: inline-block;
@@ -56,4 +56,19 @@ nav a:hover {
 .footer {
   height:200px;
   background: rgb(44, 61, 109);
+}
+
+/* order search */
+.search-order-wrap {
+  width:100%;
+
+}
+.search-order-item {
+  width:100%;
+  height:50px;
+  
+}
+.search-order-item p {
+  display: inline-block;
+  padding:10px;
 }
