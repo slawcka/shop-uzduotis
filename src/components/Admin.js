@@ -4,7 +4,7 @@ import {orders} from '../static-data-orders';
 
 const Home = () => {
     return (
-        <div className='content home'>
+        <div className='content home margin-l'>
             <SearchOrders orderList={orders}/>
         </div>
     );

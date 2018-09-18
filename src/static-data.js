@@ -25,7 +25,7 @@ let items=[
          product: 
          {
             name:'Iphone 6s',
-            description: '4hdd awesome nextgen IOS9',
+            description: '4hdd hard drive',
          },
         price: 1200,
         photo:'iphone6s.jpg'
@@ -35,7 +35,7 @@ let items=[
         product: 
          {
             name:'Sony Xperia XA1',
-            description: 'awesome hripste ter cam',
+            description: 'awesome hipster cam',
          },
         price: 450,
         photo:'sony.jpg'
@@ -44,7 +44,7 @@ let items=[
         objectID:5,
         product: 
          {
-            name:'1PLUS',
+            name:'1Plus',
             description: '64bits gameplay this that2014',
          },
         price: 380,
@@ -64,27 +64,27 @@ let items=[
         objectID:7,
         product: 
          {
-            name:'NOKIA',
-            description: 'waterproof  3000ps',
+            name:'Sony Xperia 10 ',
+            description: '12px camera 64gb',
          },
         price: 60,
-        photo:'samsunga6.jpg'
+        photo:'sony.jpg'
     },
     {
         objectID:8,
         product: 
          {
-            name:'NOKIA',
+            name:'1Plus',
             description: 'waterproof  3000ps',
          },
         price: 60,
-        photo:'samsunga6.jpg'
+        photo:'sony.jpg'
     },
     {
         objectID:9,
         product: 
          {
-            name:'NOKIA',
+            name:'Iphone 6s',
             description: 'waterproof  3000ps',
          },
         price: 60,
@@ -94,11 +94,11 @@ let items=[
         objectID:10,
         product: 
          {
-            name:'NOKIA',
+            name:'Xiaomi Mi 8',
             description: 'waterproof  3000ps',
          },
         price: 60,
-        photo:'samsunga6.jpg'
+        photo:'xiaomi.jpg'
     },
     ];
 

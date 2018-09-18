@@ -20,19 +20,23 @@
 
 .logo {
   color:rgb(203, 203, 235);
-  font-size:40px;
+  font-size:30px;
   padding:20px;
   display:inline-block;
   
 }
+.logo span {
+  color:rgb(77, 196, 67);
+}
 nav{
-  display: inline-block;
-  
+  display: flex;
+  float:right;
+  padding:20px 0;
 }
 nav a {
   color:white;
   text-decoration: none;
-  font-size:2em;
+  font-size:1em;
   padding:0 10px;
 }
 nav a:hover {
@@ -45,13 +49,15 @@ nav a:hover {
   
 }
 .header {
- 
-  background:rgb(76, 41, 85);
+  display:flex;
+  align-items: center;
+  background:rgb(57, 63, 80);
+  background-image: url(images/cover.png);
+  background-size:50%;
+  background-repeat: no-repeat;
+  background-position: 80% 0%;
 }
-.home {
-  
-  
-}
+
 .product-form {
   display: block;
   padding:20px;
@@ -73,6 +79,13 @@ nav a:hover {
 .search-product-wrap {
   border:1px solid rgb(206, 206, 206);
 }
+.search-product-wrap:hover{
+  cursor: pointer;
+  background: rgb(255,255,255); /* Old browsers */
+background: -moz-linear-gradient(top, rgba(255,255,255,1) 60%, rgba(216,253,255,1) 100%);
+background: -webkit-linear-gradient(top, rgba(255,255,255,1) 60%,rgba(216,253,255,1) 100%);
+background: linear-gradient(to bottom, rgba(255,255,255,1) 60%,rgba(216,253,255,1) 100%);
+}
 .search-product-wrap img {
   max-width:240px;
   padding:10px 10px 30px 10px;
@@ -89,20 +102,54 @@ nav a:hover {
   font-size:2.5em;
   color:rgb(6, 199, 183);
 }
+.item-price span {
+  font-weight:400;
+  color:rgb(166, 166, 192);
+}
 .admin {
   background: rgb(221, 192, 233);
 }
 .footer {
-  height:200px;
   background: rgb(44, 61, 109);
 }
-
+.footer h2{
+  padding:20px 0 20px 30px;
+  margin:0;
+  color:white;
+}
+.footer span {
+  margin-left:20px;
+  color:rgb(150, 150, 201);
+}
 /* order search */
+.order-wrap{
+  width:1200px;
+  border:red;
+  height:500px;
+}
 
 .search-order-item {
   width:100%;
-  height:50px;
+  height:70px;
+  border-bottom:3px solid rgb(187, 192, 196);
   
+}
+.search-order-item p {
+ width:20%;
+ display:inline-block;
+ padding:20px 0;
+ 
+}
+.search-order-names p {
+  background:rgb(219, 238, 238);
+  border-radius:10px;
+  margin:5px;
+  padding:10px;
+  font-size:1.3em;
+  color:rgb(78, 99, 158);
+  font-weight:700;
+  display:inline-block;
+  width:19%;
 }
 .search-order-item p {
   display: inline-block;
@@ -123,7 +170,7 @@ nav a:hover {
 .container {
   margin: 0 auto;
   max-width: 1500px;
-  min-width: 1200px;
+  min-width: 960px;
 }
 .row-s { 
   display:flex;

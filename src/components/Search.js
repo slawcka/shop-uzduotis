@@ -1,17 +1,5 @@
 import React, { Component } from 'react';
 
-
-function searchMatch(searchTerm){
-    
-
-    return function(item){
-        const keys=Object.keys(item.product);
-        console.log(keys.indexOf('1'))
-      return 
-      item.product.name.includes(searchTerm) || item.product.description.includes(searchTerm);
-      // const isSearched=searchTerm=>item=>item.title.toLowerCase().includes(searchTerm.toLowerCase());
-    }
-  }
 class Search extends Component {
     constructor(props){
         super(props);
@@ -19,7 +7,6 @@ class Search extends Component {
             searchKeyword:'',
             list:[],
             searchTerm:'',
-            
         };
         this.onSearchChange = this.onSearchChange.bind(this);
         this.onSearchSubmit = this.onSearchSubmit.bind(this);
@@ -29,16 +16,12 @@ class Search extends Component {
     }
     onSearchSubmit(event){
         event.preventDefault();
-        
-        
     }
-
     render() {
-        let filteredRes= this.props.datalist.filter(ite=>{
-            return ite.product.name.toLowerCase().includes(this.state.searchTerm) ||
-            ite.product.description.toLowerCase().includes(this.state.searchTerm);
+        let filteredRes= this.props.datalist.filter(item=>{
+            return item.product.name.toLowerCase().includes(this.state.searchTerm) ||
+            item.product.description.toLowerCase().includes(this.state.searchTerm) ;
         })
-        let filteredResults= this.props.datalist.filter(searchMatch(this.state.searchTerm));
         
         return (
             <React.Fragment>
@@ -55,7 +38,7 @@ class Search extends Component {
                                         <h1>{item.product.name}</h1>
                                         <p>{item.product.description}</p>
                                     </div>
-                                <h3 className='item-price'>{item.price}</h3>
+                                <h3 className='item-price'>{item.price}<span>eur</span></h3>
                             </div>
                     )}
                 </div>
